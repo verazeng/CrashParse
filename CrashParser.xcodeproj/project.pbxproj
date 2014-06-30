@@ -18,6 +18,13 @@
 		3BA038E9187B9B7400779916 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA038C8187B9B7400779916 /* Cocoa.framework */; };
 		3BA038F1187B9B7400779916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BA038EF187B9B7400779916 /* InfoPlist.strings */; };
 		3BA038F3187B9B7400779916 /* CrashParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA038F2187B9B7400779916 /* CrashParserTests.m */; };
+		3BA038FF187B9CAE00779916 /* CrashParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA038FE187B9CAE00779916 /* CrashParse.m */; };
+		3BA7C7C1188E6C7700D74EE3 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3BA7C7C0188E6C7700D74EE3 /* icon.icns */; };
+		3BA7C7C3188E6FA400D74EE3 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA7C7C2188E6FA400D74EE3 /* Images-2.xcassets */; };
+		3BFA9AEE1884E170007F55D8 /* NSDragginBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA9AED1884E170007F55D8 /* NSDragginBox.m */; };
+		3BFA9AF21886351D007F55D8 /* NSFileOperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFA9AF11886351D007F55D8 /* NSFileOperView.m */; };
+		3BFA9AF918866EC7007F55D8 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA9AF718866EC7007F55D8 /* close.png */; };
+		3BFA9AFA18866EC7007F55D8 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFA9AF818866EC7007F55D8 /* close@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,17 @@
 		3BA038EE187B9B7400779916 /* CrashParserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrashParserTests-Info.plist"; sourceTree = "<group>"; };
 		3BA038F0187B9B7400779916 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BA038F2187B9B7400779916 /* CrashParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashParserTests.m; sourceTree = "<group>"; };
+		3BA038FD187B9CAE00779916 /* CrashParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrashParse.h; path = parser/CrashParse.h; sourceTree = "<group>"; };
+		3BA038FE187B9CAE00779916 /* CrashParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CrashParse.m; path = parser/CrashParse.m; sourceTree = "<group>"; };
+		3BA03900187BDB3B00779916 /* CrashParser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CrashParser.entitlements; sourceTree = "<group>"; };
+		3BA7C7C0188E6C7700D74EE3 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		3BA7C7C2188E6FA400D74EE3 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		3BFA9AEC1884E170007F55D8 /* NSDragginBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDragginBox.h; path = parser/NSDragginBox.h; sourceTree = "<group>"; };
+		3BFA9AED1884E170007F55D8 /* NSDragginBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDragginBox.m; path = parser/NSDragginBox.m; sourceTree = "<group>"; };
+		3BFA9AF01886351D007F55D8 /* NSFileOperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSFileOperView.h; path = parser/NSFileOperView.h; sourceTree = "<group>"; };
+		3BFA9AF11886351D007F55D8 /* NSFileOperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSFileOperView.m; path = parser/NSFileOperView.m; sourceTree = "<group>"; };
+		3BFA9AF718866EC7007F55D8 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		3BFA9AF818866EC7007F55D8 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +133,15 @@
 		3BA038CE187B9B7400779916 /* CrashParser */ = {
 			isa = PBXGroup;
 			children = (
+				3BFA9AF718866EC7007F55D8 /* close.png */,
+				3BFA9AF818866EC7007F55D8 /* close@2x.png */,
+				3BA03900187BDB3B00779916 /* CrashParser.entitlements */,
+				3BA038FC187B9C3700779916 /* MyParser */,
 				3BA038DA187B9B7400779916 /* AppDelegate.h */,
 				3BA038DB187B9B7400779916 /* AppDelegate.m */,
 				3BA038DD187B9B7400779916 /* MainMenu.xib */,
 				3BA038E0187B9B7400779916 /* Images.xcassets */,
+				3BA7C7C2188E6FA400D74EE3 /* Images-2.xcassets */,
 				3BA038CF187B9B7400779916 /* Supporting Files */,
 			);
 			path = CrashParser;
@@ -127,6 +150,7 @@
 		3BA038CF187B9B7400779916 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3BA7C7C0188E6C7700D74EE3 /* icon.icns */,
 				3BA038D0187B9B7400779916 /* CrashParser-Info.plist */,
 				3BA038D1187B9B7400779916 /* InfoPlist.strings */,
 				3BA038D4187B9B7400779916 /* main.m */,
@@ -152,6 +176,19 @@
 				3BA038EF187B9B7400779916 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BA038FC187B9C3700779916 /* MyParser */ = {
+			isa = PBXGroup;
+			children = (
+				3BA038FD187B9CAE00779916 /* CrashParse.h */,
+				3BA038FE187B9CAE00779916 /* CrashParse.m */,
+				3BFA9AEC1884E170007F55D8 /* NSDragginBox.h */,
+				3BFA9AED1884E170007F55D8 /* NSDragginBox.m */,
+				3BFA9AF01886351D007F55D8 /* NSFileOperView.h */,
+				3BFA9AF11886351D007F55D8 /* NSFileOperView.m */,
+			);
+			name = MyParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +238,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = verazeng;
 				TargetAttributes = {
+					3BA038C4187B9B7400779916 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
 					3BA038E5187B9B7400779916 = {
 						TestTargetID = 3BA038C4187B9B7400779916;
 					};
@@ -231,8 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA038D3187B9B7400779916 /* InfoPlist.strings in Resources */,
+				3BA7C7C1188E6C7700D74EE3 /* icon.icns in Resources */,
+				3BA7C7C3188E6FA400D74EE3 /* Images-2.xcassets in Resources */,
 				3BA038E1187B9B7400779916 /* Images.xcassets in Resources */,
 				3BA038D9187B9B7400779916 /* Credits.rtf in Resources */,
+				3BFA9AFA18866EC7007F55D8 /* close@2x.png in Resources */,
+				3BFA9AF918866EC7007F55D8 /* close.png in Resources */,
 				3BA038DF187B9B7400779916 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFA9AF21886351D007F55D8 /* NSFileOperView.m in Sources */,
 				3BA038DC187B9B7400779916 /* AppDelegate.m in Sources */,
+				3BA038FF187B9CAE00779916 /* CrashParse.m in Sources */,
 				3BA038D5187B9B7400779916 /* main.m in Sources */,
+				3BFA9AEE1884E170007F55D8 /* NSDragginBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +378,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: HENG ZENG (A3Z63E7W2Y)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -365,6 +417,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: HENG ZENG (A3Z63E7W2Y)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -384,7 +437,7 @@
 		3BA038F7187B9B7400779916 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: HENG ZENG (A3Z63E7W2Y)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrashParser/CrashParser-Prefix.pch";
@@ -397,7 +450,7 @@
 		3BA038F8187B9B7400779916 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: HENG ZENG (A3Z63E7W2Y)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrashParser/CrashParser-Prefix.pch";
@@ -466,6 +519,7 @@
 				3BA038F8187B9B7400779916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BA038F9187B9B7400779916 /* Build configuration list for PBXNativeTarget "CrashParserTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +528,7 @@
 				3BA038FB187B9B7400779916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
