@@ -66,7 +66,7 @@ static CrashParse *parseInstance = nil;
 
 - (void)clearParseFolder
 {
-    [[NSFileManager defaultManager] removeItemAtPath:_desPath error:nil];
+    [[NSFileManager defaultManager] removeItemAtPath:self.desPath error:nil];
 }
 
 - (void)copyCrashFilesToDestPath
@@ -75,7 +75,7 @@ static CrashParse *parseInstance = nil;
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyyMMdd_HHmmss"];
     NSString *curFolderName = [formatter stringFromDate:[NSDate date]];
-    NSString *curFolderPath = [_desPath stringByAppendingPathComponent:curFolderName];
+    NSString *curFolderPath = [self.desPath stringByAppendingPathComponent:curFolderName];
     self.curCrashFolderPath = curFolderPath;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL isDir = YES;
@@ -148,7 +148,7 @@ static CrashParse *parseInstance = nil;
             break;
         }
         
-        //解析含有QQMusic的行
+        //解析含有app name的行
         if ([oneLineStr rangeOfString:_desAppName].length > 0) {
 //            NSLog(@"###one line crash:###\n%@",oneLineStr);
             NSRange rRange = [oneLineStr rangeOfString:@"\t"];
